@@ -32,6 +32,18 @@ class LinkedList:
         new_node = Node(data)
         new_node.next_node = self.head
         self.head = new_node
+        
+    #searching through the list returning the value if found and none if not found
+    def search(self, key):
+        current=self.key
+        
+        while current:
+            if current.data==key:
+                return current
+            else:
+                current=current.next_node
+            return None
+        
 
     def __repr__(self):
         """
