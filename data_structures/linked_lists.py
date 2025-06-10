@@ -1,3 +1,4 @@
+
 class Node:
     # An object for storing a single node of a linked list
     def __init__(self, data):
@@ -35,15 +36,53 @@ class LinkedList:
         
     #searching through the list returning the value if found and none if not found
     def search(self, key):
-        current=self.key
+        current=self.head
         
         while current:
             if current.data==key:
                 return current
             else:
                 current=current.next_node
-            return None
+        return None
+    
+    def insert(self, data, index):
         
+        #inserts a new Node containing data at index position insertion takes O(1) time but finding the node at the insertion point takes O(n)
+        if index==0:
+            self.add(data)
+        if index>0:
+            new=Node(data)
+            
+            position=index
+            current=self.head
+            
+            while position >1:
+                current=Node.next_node
+                position-=1
+                
+            prev_node=current
+            next_node=current.next_node
+            
+            prev_node.next_node=current
+            new.next_node=next_node
+                
+    def remove(self, key): 
+        #Removes the node matching the key returning the node or None if key doesnt exist. takes O(n) time
+        current=self.head
+        previous=None
+        found=False
+        
+        while current and not found:
+            if current.data==key and current is self.head:
+                found=True
+                self.head=current.next_node
+            elif current.data==key:
+                found=True
+                previous.next_node=current.next_node
+            else:
+                previous =current
+                current=current.next_node  
+        return current   
 
     def __repr__(self):
         """
