@@ -1,13 +1,12 @@
 # Aligorithms_implementation
 
-This repository contains implementations of various algorithms, data structures, and utility scripts (such as files_to_folder_organizer.py). Explore the folders for more details.
 ### A Recursive Aligorithm 
 A recursive function breaks the problem down into smaller problems, and calls itself for each of the smaller problems. 
 It usually includes a base case or terminal case and a recursive case. 
 ****Lets try print the ^2 of a number that exists between 1-1000, if the number does not exists, it should print "pick another num"
 otherwise it should print out the results.
 
-
+This repository contains implementations of various algorithms, data structures, and utility scripts. Explore the folders for more details.
 
 Pro: 
 - In some cases, its extremely fast and easy to code. 
