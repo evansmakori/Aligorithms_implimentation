@@ -1,7 +1,7 @@
-# Data Structures and Aligorithms
+# Data Structures and Algorithms
 This repository contains implementations of various algorithms, data structures, and utility scripts. Explore the folders for more details.
 
-### A Recursive Aligorithm 
+### A Recursive Algorithm 
 A recursive function breaks the problem down into smaller problems, and calls itself for each of the smaller problems. 
 It usually includes a base case or terminal case and a recursive case.
 
