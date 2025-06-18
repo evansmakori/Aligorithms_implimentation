@@ -2,9 +2,11 @@
 This repository contains implementations of various algorithms, data structures, and utility scripts. Explore the folders for more details.
 
 ### A Recursive Algorithm 
-Algorithmically: A way to design solutions to problems by **devide-and-conquer**  or ** decrease-and-conquer**
-Semantically:A recursive function breaks the problem down into smaller problems, and calls itself for each of the smaller problems. 
-It usually includes a base case or terminal case and a recursive case.
+**Algorithmically:** A way to design solutions to problems by **devide-and-conquer**  or **decrease-and-conquer**
+**Semantically:** A recursive function breaks the problem down into smaller problems, and calls itself for each of the smaller problems. 
+It usually includes 1 or more base case or terminal case and a recursive case.
+
+*For more about recursion and dictionaries, check out MIT: https://www.youtube.com/watch?v=WPSeyjX1-4s* 
 
 *Lets try print the ^2 of a number that exists between 1-1000, if the number does not exists, it should print "pick another num," otherwise it should print out the results.*
 
